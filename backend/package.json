@@ -1,0 +1,24 @@
+{
+  "name": "bn-search-backend",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "publish:001": "node add-001-jdbc-winthor.mjs",
+    "publish:002": "node add-002-estoque.mjs",
+    "publish:003": "node add-003-perfil-acesso.mjs",
+    "publish:004": "node add-004-fotos.mjs",
+    "sync:function-map": "node sync-server-function-map.mjs",
+    "sim": "node simulator/server.mjs",
+    "sim:seed": "node simulator/seed-cli.mjs",
+    "sim:check": "node simulator/check.mjs",
+    "sim:smoke": "node simulator/smoke.mjs",
+    "test": "npm run sim:check && npm run sim:smoke"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mitra-sdk": "^1.0.62"
+  },
+  "devDependencies": {
+    "oracledb": "^6.9.0"
+  }
+}

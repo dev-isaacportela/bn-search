@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+
+# o simulador vai para a equipe: é onde os testes do backend rodam. Só o banco gerado fica de fora.
+backend/simulator/data/

@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "simulador", "runtimeExecutable": "npm", "runtimeArgs": ["run", "sim", "--prefix", "backend"], "port": 3114 },
+    { "name": "frontend", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--prefix", "frontend", "--", "--port", "5184", "--strictPort"], "port": 5184 }
+  ]
+}
